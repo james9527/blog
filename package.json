@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev src",
-    "build": "rm -rf docs && vuepress build src",
-    "deploy": "git add . && git commit -m 'deploy' && git push origin master"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "git add . && git commit -m 'deploy' && git push origin master",
+    "pb": "sh deploy.sh"
   },
   "keywords": [],
   "author": "",
