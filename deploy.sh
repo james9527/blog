@@ -17,11 +17,11 @@ git pull
 git add -A
 git commit -m 'deploy'
 
-# 如果发布到 https://<USERNAME>.github.io
-#git push -f git@github.com:james9527/james9527.github.io.git master
-#git remote add origin https://github.com/james9527/james9527.github.io.git
-git push origin https://github.com/james9527/james9527.github.io.git master
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
+# 如果发布到 https://james9527.github.io
+git push -f git@github.com:james9527/james9527.github.io.git master
+# 如果发布到 https://james9527.github.io/blog
 # git push -f git@github.com:james9527/blog.git master:gh-pages
+
+# Tips: 可以在持续集成的设置中，设置在每次 push 代码时自动运行上述脚本。 
 
 cd -

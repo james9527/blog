@@ -1,6 +1,6 @@
 module.exports = {
-  // base: '/blog/', // 部署到github.io/blog上
-  base: '/', // 部署到github.io上
+  // base: '/blog/', // 部署到james9527.github.io/blog上
+  // base: '/', // 部署到james9527.github.io上（默认配置）
   dest: 'docs',
   title: 'james9527的前端日志',
   description: '欢迎访问我的前端日志~',
