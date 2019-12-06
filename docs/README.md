@@ -2,7 +2,7 @@
 home: true
 heroImage: https://avatars0.githubusercontent.com/u/9150804?s=460&v=4
 actionText: 开始阅读 →
-actionLink: /url/fe.html
+actionLink: /blog/url/fe.html
 features:
   - title: 积累
     details: 不积跬步，无以至千里。平时的一些积累，包含工作日常的笔记、英文单词等内容。

@@ -1,5 +1,5 @@
 # 个人博客
-记录工作中遇到的问题，平时看书的总结，面试题，以及一些个人思考。
+记录工作中遇到的问题，平时看书的总结，基础知识积累，以及一些个人思考。
 
 访问地址：[james9527.github.io](https://james9527.github.io/)
 
@@ -27,5 +27,5 @@ npm run lint:fix
 npm run build
 
 # publish to git depository
-npm run deploy
+npm run pb
 ```
