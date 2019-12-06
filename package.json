@@ -11,11 +11,6 @@
     "build": "vuepress build docs",
     "pb": "sh deploy.sh"
   },
-  // "husky": {
-  //   "hooks": {
-  //     "pre-commit": "npm run lint"
-  //   }
-  // },
   "keywords": ["blog", "vue", "react", "scratch"],
   "author": "james9527",
   "license": "ISC",
