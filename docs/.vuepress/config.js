@@ -25,6 +25,9 @@ module.exports = {
     nav: [{
         text: '随手记系列',
         items: [{
+            text: '前端基础JS系列',
+            link: '/blog/share/javascript-basic'
+          }, {
             text: 'eslint规则',
             link: '/blog/share/eslint'
           },
@@ -47,10 +50,6 @@ module.exports = {
           {
             text: '深入浅出前端脚手架',
             link: '/blog/share/scaffold'
-          },
-          {
-            text: '前端基础JS系列',
-            link: '/blog/share/javascript-basic'
           },
           {
             text: 'markdown语法',
