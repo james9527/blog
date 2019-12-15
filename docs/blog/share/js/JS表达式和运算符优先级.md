@@ -5,29 +5,26 @@ collapsable: true
 author: James9527
 ---
 
-## 表达式&& 和 ||的短路原则
+## 表达式&&还会短路？
 
-你是否看一眼就知道表达式`console.log(1&&2)`的输出结果？如果是，以下内容可以不用看了，大佬们请绕道🙏，本文只是围绕这一问题由点及面展开了一些知识点的整理。
+你是否看一眼就知道表达式`console.log(1&&2)`的输出结果？如果是，以下内容可以不用看了。本文只是围绕这一问题由点及面展开了一些基础知识点的整理，方便后续查阅。
 
 ## 首先抛出一些基础题
 
-
 ```js
-console.log(1 && 2) // 2
 console.log(1 || 2) // 1
 console.log(0 || 1); // 1
 console.log(1 && 0); // 0
 console.log(0 && 1); // 0
 console.log('1' + 2 + 3); // 123
 console.log(3 + 4 * 5); // 3 + 20
-// 详解：(3>2)>1 => true>1 => false
-console.log(3 > 2 > 1); // false
+console.log(3 > 2 > 1); // false（ 分解：(3>2)>1 => true>1 => false）
 console.log(3 > 2 && 2 > 1); // true
 console.log([] == false) // true
 console.log(![]) // false
 console.log(!![]) // true
 ```
-由以上可知，逻辑运算符，“||”和“&&”都是遵行短路原则，只要确定符号前面的真假，既可确定返回值。再如以下示例：
+由以上可知，逻辑运算符，“||”和“&&”都是遵行短路原则，只要确定符号前面的真假，既可确定返回值，故表达式`console.log(1&&2)`的值为2。再如以下示例：
 
 ```js
 var a = 1;
