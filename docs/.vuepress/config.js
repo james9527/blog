@@ -48,10 +48,6 @@ module.exports = {
             link: '/blog/share/wechat'
           },
           {
-            text: '深入浅出前端脚手架',
-            link: '/blog/share/scaffold'
-          },
-          {
             text: 'markdown语法',
             link: '/blog/share/md'
           },
