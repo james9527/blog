@@ -27,7 +27,12 @@ module.exports = {
         items: [{
             text: '前端基础JS系列',
             link: '/blog/share/javascript-basic'
-          }, {
+          }, 
+          {
+            text: '前端基础CSS系列',
+            link: '/blog/share/css(3)-basic'
+          }, 
+          {
             text: 'eslint规则',
             link: '/blog/share/eslint'
           },
