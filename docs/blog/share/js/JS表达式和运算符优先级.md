@@ -23,16 +23,17 @@ console.log(3 > 2 && 2 > 1); // true
 console.log([] == false) // true
 console.log(![]) // false
 console.log(!![]) // true
+console.log(undefined == null) // true
+console.log(undefined === null) // false
+console.log(typeof null) // "object" // 因null的二进制前三位都为0
+console.log("3" > "23") // true // 因"2"的字符编码是50，"3"的字符编码是51
 ```
-由以上可知，逻辑运算符，“||”和“&&”都是遵行短路原则，只要确定符号前面的真假，既可确定返回值，故表达式`console.log(1&&2)`的值为2。再如以下示例：
+由以上可知，可总结出以下结果：
 
-```js
-var a = 1;
-var b = 1;
-条件表达式：if（a>2 && b<2) 和 if(a>2 & b<2) 
-前者只会执行到a>2而b<2是不会执行的，返回false；
-后者执行a>2还会继续执行b<2，最终返回0；
-```
++ 逻辑运算符“||”和“&&”都是遵行短路原则，只要确定符号前面的真假，既可确定返回值，故表达式`console.log(1&&2)`的值为2。
++ 对于typeof null为object的理解，因为不同的对象在底层都表示为二进制，在JS中二进制前三位都为 0 的话会被判断为 object 类型，null 的二进制表示是全 0，自然前三位也是 0，所以执行 typeof 时会返回“ object ”。
++ 左右两个操作数都是字符串进行大小比较时，此时比较的是字符编码；
+
 ## JS表达式和运算符分类
 
 > 运算符的优先级决定了表达式中运算执行的先后顺序，优先级高的运算符最先被执行。以下将详细介绍表达式的分类和优先级：
