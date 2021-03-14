@@ -1,5 +1,5 @@
 ---
-title: 'call&apply&bind内部实现'
+title: 'call&apply&bind的原理及其自定义实现'
 sidebar: auto
 collapsable: true
 author: James9527
