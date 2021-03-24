@@ -28,40 +28,17 @@ module.exports = {
     prevLinks: true,
     // 启用下一篇链接
     nextLinks: true,
-    nav: [{
+    nav: [
+      {
         text: '前端基础',
         items: [{
             text: '前端基础JS系列',
-            link: '/blog/share/javascript-basic'
+            link: '/blog/basic/js'
           }, 
           {
             text: '前端基础CSS系列',
-            link: '/blog/share/css(3)-basic'
-          }, 
-          {
-            text: 'eslint规则',
-            link: '/blog/share/eslint'
-          },
-          {
-            text: '性能优化',
-            link: '/blog/share/opt'
-          },
-          {
-            text: '深入webpack',
-            link: '/blog/share/webpack'
-          },
-          {
-            text: 'webpack随手记',
-            link: '/blog/share/webpack-note'
-          },
-          {
-            text: '公众号开发总结',
-            link: '/blog/share/wechat'
-          },
-          {
-            text: 'markdown语法',
-            link: '/blog/share/md'
-          },
+            link: '/blog/basic/css'
+          }
         ]
       },
       {
@@ -69,27 +46,27 @@ module.exports = {
         items: [
           {
             text: 'eslint规则',
-            link: '/blog/share/eslint'
+            link: '/blog/basic/eslint'
           },
           {
             text: '性能优化',
-            link: '/blog/share/opt'
+            link: '/blog/basic/opt'
           },
           {
             text: '深入webpack',
-            link: '/blog/share/webpack'
+            link: '/blog/basic/webpack'
           },
           {
             text: 'webpack随手记',
-            link: '/blog/share/webpack-note'
+            link: '/blog/basic/webpack-note'
           },
           {
             text: '公众号开发总结',
-            link: '/blog/share/wechat'
+            link: '/blog/basic/wechat'
           },
           {
             text: 'markdown语法',
-            link: '/blog/share/md'
+            link: '/blog/basic/md'
           },
         ]
       },
@@ -123,7 +100,7 @@ module.exports = {
       },
     ],
     sidebar: false,
-    lastUpdated: "更新时间",
+    // lastUpdated: "更新时间",
     docsDir: "docs",
     editLinks: true,
     editLinkText: "本文源码地址",

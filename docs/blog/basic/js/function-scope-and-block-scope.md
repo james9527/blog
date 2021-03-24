@@ -1,5 +1,5 @@
 ---
-title: '函数作用域和块级作用域'
+title: '函数作用域和块作用域'
 sidebar: auto
 collapsable: true
 author: James9527
