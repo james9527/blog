@@ -100,7 +100,7 @@ module.exports = {
       },
     ],
     sidebar: false,
-    lastUpdated: "更新时间",
+    // lastUpdated: "更新时间",
     docsDir: "docs",
     editLinks: true,
     editLinkText: "本文源码地址",
