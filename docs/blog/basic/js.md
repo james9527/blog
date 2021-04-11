@@ -2,7 +2,6 @@
 title: 'Javascript基础系列'
 sidebar: auto
 collapsable: true
-author: James9527
 ---
 
 # Javascript基础系列
@@ -17,6 +16,4 @@ author: James9527
 + [JS模块化](./js/javascript-module.md)
 + [jsBridge](./js/javascript-jsBridge.md)
 + [PostMessage](./js/javascript-postmessage.md)
-+ [函数递归优化](./js/javascript-recursion.md)
-+ [对象属性的优化](./js/javascript-object-ergodic.md)
-+ [Promise/A+规范](./js/javascript-promise.md)
++ [对象属性的遍历](./js/javascript-object-ergodic.md)
