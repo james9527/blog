@@ -3,9 +3,7 @@
 
 访问地址：[james9527.github.io](https://james9527.github.io/)
 
-## 使用
-
-博客采用 vuepress 作为主框架，lint-md 作为语法检查工具。
+## 运行说明
 
 ```sh
 # clone with Git Bash
