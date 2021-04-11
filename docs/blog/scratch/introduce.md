@@ -60,4 +60,4 @@ Scratch3.0基于html5构建，能轻松支持多平台运行，十分可期，�
 
 目前把Scratch3.0玩得很溜的，国外有Cozmo，而国内有makeblock和kittenbot。
 
-项目有关源码 请到 https://github.com/LLK 。
+项目有关源码 请到 [https://github.com/LLK](https://github.com/LLK )。

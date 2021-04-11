@@ -3,7 +3,8 @@ sidebar: auto
 ---
 # 常用网址
 
-## 底层技术
+## 底层原理&基础巩固
+  + [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   + [tc39/ecma262](https://github.com/tc39/ecma262)
   + [v8](https://github.com/v8/v8)
   + [chromium](https://github.com/chromium/chromium)

@@ -81,22 +81,20 @@ module.exports = {
       {
         text: '工作相关',
         items: [{
-            text: '深入skulpt',
-            link: '/blog/skulpt/1'
-          },
-          {
-            text: '深入scratch',
-            link: '/blog/scratch/links'
-          },
-        ]
+          text: '深入scratch',
+          link: '/blog/scratch/material'
+        }, {
+          text: '深入skulpt',
+          link: '/blog/skulpt/introduce'
+        }]
       },
       {
         text: '常用网址',
         link: '/blog/bookmark/home'
       },
       {
-        text: 'github',
-        link: 'https://github.com/james9527/blog'
+        text: 'Github',
+        link: 'https://github.com/james9527'
       },
     ],
     sidebar: false,

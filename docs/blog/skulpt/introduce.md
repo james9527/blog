@@ -10,3 +10,7 @@ Skulpt是一个完全基于浏览器的Python运行环境，无须任何预处�
 - tynker
 - coursera
 - trinket
+
+## 官网及源码仓库
+- [skulpt.org](http://skulpt.org/)
+- [skulpt仓库](https://github.com/skulpt/skulpt)
