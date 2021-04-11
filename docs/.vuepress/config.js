@@ -45,42 +45,40 @@ module.exports = {
         text: '前端进阶',
         items: [
           {
-            text: 'eslint规则',
-            link: '/blog/basic/eslint'
-          },
-          {
-            text: '性能优化',
-            link: '/blog/basic/opt'
-          },
-          {
-            text: '深入webpack',
-            link: '/blog/basic/webpack'
-          },
-          {
-            text: 'webpack随手记',
-            link: '/blog/basic/webpack-note'
-          },
-          {
-            text: '公众号开发总结',
-            link: '/blog/basic/wechat'
-          },
-          {
-            text: 'markdown语法',
-            link: '/blog/basic/md'
+            text: 'Javascript进阶系列',
+            link: '/blog/advanced/js'
+          }, {
+            text: 'CSS进阶系列',
+            link: '/blog/advanced/css'
+          }, {
+            text: 'Node.js进阶系列',
+            link: '/blog/advanced/node'
+          }, {
+            text: '性能优化系列',
+            link: '/blog/advanced/performance'
           },
         ]
       },
       {
         text: '前端工程化',
         items: [{
-            text: 'webpack 英文',
-            link: '/blog/en/webpack'
-          },
+            text: 'Webpack核心概念',
+            link: '/blog/fe-compile/webpack-principle'
+          }, {
+            text: 'vue-cli中webpack相关配置',
+            link: '/blog/fe-compile/vue-cli'
+          }, {
+            text: 'Webpack踩坑清单',
+            link: '/blog/fe-compile/webpack-bug-list'
+          }
         ]
       },
       {
         text: '工作相关',
         items: [{
+          text: '前端开发手册',
+          link: '/blog/work/home'
+        }, {
           text: '深入scratch',
           link: '/blog/scratch/material'
         }, {

@@ -49,7 +49,7 @@ sidebar: auto
 ## 多端统一框架
   + [Taro](https://nervjs.github.io/taro/)
 
-## Javascript原理相关
+## JS原理相关
   + [解读 JavaScript 之引擎、运行时和堆栈调用](https://www.oschina.net/translate/how-does-javascript-actually-work-part-1)
 
 ## HTML5&CSS3相关
@@ -68,17 +68,21 @@ sidebar: auto
   + [GraphQL](http://graphql.cn/)
   + [orm2 中文文档](https://wizardforcel.gitbooks.io/orm2-doc-zh-cn/content/)
 
-## 协同工作相关
+## 实用网站
   + [常用fontIcons](http://www.fontawesome.com.cn/faicons/)
   + [产品设计协作平台-蓝湖](https://lanhuapp.com/web/#/item)
+  + [Canva可画--平面物料设计](https://www.canva.cn/)
+  + [稿定设计--图和视频](https://www.gaoding.com/)
   + [在线压缩图片](https://tinypng.com/)
   + [Create and share beautiful images of your source code](https://carbon.now.sh)
   + [持续集成--Centos服务器配置](https://segmentfault.com/a/1190000013242438)
+  + [中文版lighthouse--测试网页性能](https://developers.google.com/speed/pagespeed/insights/)
 
 ## 代码规范
-  + [Eslint中文文档](https://cn.eslint.org/)
+  + [Eslint规范](https://cn.eslint.org/)
+  + [Standardjs规范](https://standardjs.com/readme-zhcn.html)
 
-## 前端周边技术
+## CI/CD
   + [Docker镜像推送（push）到Docker Hub](https://blog.csdn.net/boonya/article/details/74906927)
 
 ## 前端社区
@@ -87,7 +91,7 @@ sidebar: auto
   + [Node.js中文社区](https://cnodejs.org/)
   + [leetcode-算法题库](https://leetcode-cn.com/problemset/all/)
 
-## 啥是Python(Peiqi)
+## Python入门与实战
   + [零基础入门学习Python](https://edu.aliyun.com/course/137)
   + [Python基础快速入门实战教程](https://edu.aliyun.com/course/154)
   + [Python开发实战系列(1)：基础入门](https://edu.aliyun.com/course/1370)

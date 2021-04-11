@@ -2,7 +2,6 @@
 title: 'html元素定位以及BFC的应用'
 sidebar: auto
 collapsable: true
-author: James9527
 ---
 
 > 总所周知，css布局中的定位方式有以下几种：static、float、relative、absolute、fixed 和 sticky。那么它们都有哪些区别呢？
