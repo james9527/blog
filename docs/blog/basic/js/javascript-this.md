@@ -1,11 +1,10 @@
 ---
-title: 'call&apply&bind的原理及其自定义实现'
+title: 'This上下文'
 sidebar: auto
 collapsable: true
-author: James9527
 ---
 
-# JS 理解 This
+# This上下文
 
 ## 一道测试题引发的思考
 

@@ -1,8 +1,7 @@
 ---
-title: 'call&apply&bind的原理及其自定义实现'
+title: 'JS PostMessage & 拖放 API'
 sidebar: auto
 collapsable: true
-author: James9527
 ---
 
 # JS PostMessage & 拖放 API
@@ -100,7 +99,7 @@ dropEffect 属性值：
 
 ```js
 // 参数分别为L状态对象，新状态标题，可选的相对URL
-history.pushState({ name: "yhl" }, "new title", "yhl.html");
+history.pushState({ name: "james9527" }, "new title", "james9527.html");
 ```
 
 执行 pushState()方法后，新的状态信息就会被加入历史状态栈，而浏览器状态栏也会变成新的相对 url。按下后退按钮，会触发 window 对象的 popState 事件。

@@ -10,7 +10,6 @@ collapsable: true
 + [this指向](./js/javascript-this.md)
 + [ES5/6实现继承](./js/javascript-inherit.md)
 + [函数作用域和块作用域](./js/function-scope-and-block-scope.md)
-+ [浅析作用域和闭包](./js/scope-and-closure.md)
 + [call&apply&bind的原理及其自定义实现](./js/call-apply-bind-principle-and-custom.md)
 + [事件Event](./js/javascript-event.md)
 + [JS模块化](./js/javascript-module.md)

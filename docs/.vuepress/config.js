@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   // base: '/blog/', // 部署到james9527.github.io/blog上
   // base: '/', // 部署到james9527.github.io上（默认配置）
@@ -100,6 +102,13 @@ module.exports = {
     docsDir: "docs",
     editLinks: true,
     editLinkText: "本文源码地址",
+  },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@img': '/blog/images'
+      }
+    }
   },
   plugins: {
     '@vuepress/medium-zoom': {

@@ -2,7 +2,6 @@
 title: '浅析作用域和闭包'
 sidebar: auto
 collapsable: true
-author: James9527
 ---
 
 ## 写在前面
