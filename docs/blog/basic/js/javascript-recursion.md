@@ -1,8 +1,7 @@
 ---
-title: 'call&apply&bind的原理及其自定义实现'
+title: 'JS 函数尾递归优化'
 sidebar: auto
 collapsable: true
-author: James9527
 ---
 
 # JS 函数尾递归优化

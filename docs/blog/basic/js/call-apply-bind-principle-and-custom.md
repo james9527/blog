@@ -1,8 +1,7 @@
 ---
-title: 'call&apply&bind的原理及其自定义实现'
+title: 'call&apply&bind自定义实现'
 sidebar: auto
 collapsable: true
-author: James9527
 ---
 
 > 我们都知道，call/apply/bind都可以用来改变this的指向，先用一段示例演示它们的用法，然后再理解它们的源码实现，先看下面这段输出：

@@ -1,8 +1,7 @@
 ---
-title: 'call&apply&bind的原理及其自定义实现'
+title: 'JS Bridge 原理'
 sidebar: auto
 collapsable: true
-author: James9527
 ---
 
 # JS Bridge 总结

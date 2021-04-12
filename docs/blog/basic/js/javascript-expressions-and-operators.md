@@ -2,7 +2,6 @@
 title: 'JS表达式和运算符优先级'
 sidebar: auto
 collapsable: true
-author: James9527
 ---
 
 ## 表达式&&还会短路？

@@ -1,8 +1,7 @@
 ---
-title: 'call&apply&bind的原理及其自定义实现'
+title: 'JS 对象属性的遍历'
 sidebar: auto
 collapsable: true
-author: James9527
 ---
 
 # JS 对象属性的遍历
