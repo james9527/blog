@@ -13,8 +13,9 @@ collapsable: true
 ```js
 console.log(1 || 2) // 1
 console.log(0 || 1); // 1
-console.log(1 && 0); // 0
 console.log(0 && 1); // 0
+console.log(1 && 0); // 0
+console.log(1&&2); // 2
 console.log('1' + 2 + 3); // 123
 console.log(3 + 4 * 5); // 3 + 20
 console.log(3 > 2 > 1); // false（ 分解：(3>2)>1 => true>1 => false）
@@ -24,7 +25,10 @@ console.log(![]) // false
 console.log(!![]) // true
 console.log(undefined == null) // true
 console.log(undefined === null) // false
+console.log(null == null) // true
+console.log(null === null) // true
 console.log(typeof null) // "object" // 因null的二进制前三位都为0
+console.log(NaN == NaN) // false
 console.log("3" > "23") // true // 因"2"的字符编码是50，"3"的字符编码是51
 ```
 由以上可知，可总结出以下结果：
