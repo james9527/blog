@@ -81,6 +81,9 @@ module.exports = {
           text: '前端开发手册',
           link: '/blog/work/home'
         }, {
+          text: 'Nuxt重构电商M站踩坑笔记',
+          link: '/blog/work/nuxt-notes.md'
+        }, {
           text: '深入scratch',
           link: '/blog/scratch/material'
         }, {
