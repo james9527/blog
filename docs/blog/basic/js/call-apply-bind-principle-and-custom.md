@@ -29,7 +29,7 @@ animal.say.bind(obj)(); // 光头强
 
 ## 自定义call的实现
 
-自定义的Function.prototype.call2主要实现步骤如下：
+自定义的Function.prototype.myCall主要实现步骤如下：
 
 + 将函数设为对象的属性；
 + 执行&删除这个函数；
@@ -37,7 +37,7 @@ animal.say.bind(obj)(); // 光头强
 
 ```js
 // 自定义call实现：
-Function.prototype.call2 = function(context = window) {
+Function.prototype.myCall = function(context = window) {
   // 将函数设为对象的属性
   context.fn = this;
   // 执行并删除这个函数
@@ -54,7 +54,7 @@ Function.prototype.call2 = function(context = window) {
 自定义apply的实现与call()类似，只是参数不同：
 
 ```js
-Function.prototype.apply2 = function(context = window) {
+Function.prototype.myApply = function(context = window) {
   context.fn = this;
   let result;
   if(arguments[1]) {
@@ -75,23 +75,23 @@ Function.prototype.apply2 = function(context = window) {
 + bind实现需要考虑实例化后对原型链的影响；
 
 ```js
-Function.prototype.bind2 = function(context) {
+Function.prototype.myBind = function(context) {
   if(typeof this !== 'function') {
     throw Error('not a function');
   }
   let fn = this;
   let args = [...arguments].slice(1);
-  let resFn = function() {
-    return fn.apply(this instanceof resFn ? this : context, args.concat(...arguments));
+  let newFn = function() {
+    return fn.apply(this instanceof newFn ? this : context, args.concat(...arguments));
   }
-  function tmp() {}
-  tmp.prototype = this.prototype;
-  resFn.prototype = new tmp();
-  return resFn;
+  function tmpFn() {}
+  tmpFn.prototype = this.prototype;
+  newFn.prototype = new tmpFn();
+  return newFn;
 }
 ```
 
-将自定义的call2/apply2/bind2应用在前文示例中如下：
+将自定义的myCall/myApply/myBind应用在前文示例中如下：
 
 ```js
 function Animal() {}
@@ -109,9 +109,9 @@ let obj = {
   name: 'James9527'
 }
 
-animal.say.call2(obj); // James9527
-animal.say.apply2(obj); // James9527
-animal.say.bind2(obj)(); // James9527
+animal.say.myCall(obj); // James9527
+animal.say.myApply(obj); // James9527
+animal.say.myBind(obj)(); // James9527
 ```
 ## 典型应用场景
 
