@@ -36,7 +36,6 @@ animal.say.bind(obj)(); // 光头强
 + 指定this到函数并传入给定参数，同时执行函数；
 
 ```js
-// 自定义call实现：
 Function.prototype.myCall = function(context = window) {
   // 将函数设为对象的属性
   context.fn = this;
@@ -55,9 +54,12 @@ Function.prototype.myCall = function(context = window) {
 
 ```js
 Function.prototype.myApply = function(context = window) {
-  context.fn = this;
+  // 将函数设为对象的属性
+  context.fn = this; // this为say方法
+  // 执行并删除这个函数
   let result;
-  if(arguments[1]) {
+  // 当前context对象值为fn: say() 和 参数obj对象{name: xxx}
+  if(arguments[1]) { // 当前arguments[1]为undefined
     result = context.fn(...arguments[1]);
   } else {
     result = context.fn();
@@ -77,16 +79,18 @@ Function.prototype.myApply = function(context = window) {
 ```js
 Function.prototype.myBind = function(context) {
   if(typeof this !== 'function') {
-    throw Error('not a function');
+    throw new Error('this not a function');
   }
-  let fn = this;
-  let args = [...arguments].slice(1);
-  let newFn = function() {
+  const fn = this;
+  const args = [...arguments].slice(1);
+  const newFn = function() {
     return fn.apply(this instanceof newFn ? this : context, args.concat(...arguments));
   }
   function tmpFn() {}
   tmpFn.prototype = this.prototype;
+  // 修正newFn的原型对象
   newFn.prototype = new tmpFn();
+  // 返回新函数
   return newFn;
 }
 ```
