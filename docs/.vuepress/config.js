@@ -76,11 +76,8 @@ module.exports = {
         ]
       },
       {
-        text: '工作相关',
+        text: '业务沉淀',
         items: [{
-          text: '前端开发手册',
-          link: '/blog/work/home'
-        }, {
           text: 'Nuxt重构电商M站踩坑笔记',
           link: '/blog/work/nuxt-notes.md'
         }, {
@@ -92,7 +89,20 @@ module.exports = {
         }, {
           text: '深入skulpt',
           link: '/blog/skulpt/introduce'
+        }, {
+          text: 'H5支持Video视频自动播放技术调研',
+          link: '/blog/work/video-autoplay.md'
+        }, {
+          text: '运营侧权限控制（Vue版）',
+          link: '/blog/work/operation-authority-vue.md'
+        }, {
+          text: '运营侧权限控制（React版）',
+          link: '/blog/work/operation-authority-react.md'
         }]
+      },
+      {
+        text: '前端开发手册',
+        link: '/blog/work/home'
       },
       {
         text: '常用网址',
