@@ -84,6 +84,9 @@ module.exports = {
           text: 'Nuxt重构电商M站踩坑笔记',
           link: '/blog/work/nuxt-notes.md'
         }, {
+          text: '神策数据分析简介及其应用',
+          link: '/blog/work/sensors-analyse.md'
+        }, {
           text: '深入scratch',
           link: '/blog/scratch/material'
         }, {
