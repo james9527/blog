@@ -12,8 +12,9 @@ sidebar: auto
 ## 语言标准
   + [ECMAScript中文文档](https://ecma262.docschina.org/)
   + [GraphQL](http://graphql.cn/)
-  + [TS中文网](https://tslang.cn/)
-  + [TypeScript中文文档](https://zhongsp.gitbooks.io/typescript-handbook/)
+  + [TS Playground](https://www.typescriptlang.org/play)
+  + [TS入门教程](https://ts.xcatliu.com/)
+  + [TS中文文档](https://zhongsp.gitbooks.io/typescript-handbook/)
 
 ## 前端工程化相关
   + [webpack 中文文档(@印记中文)](https://webpack.docschina.org/)
@@ -59,7 +60,6 @@ sidebar: auto
   + [JavaScript和CSS3 动效库大全](https://www.ui.cn/detail/16348.html)
 
 ## 前端性能优化相关
-  + [前端性能——监控起步](https://www.cnblogs.com/chuaWeb/p/PerformanceMonitoring.html)
   + [利用Webpack做web性能优化](http://www.open-open.com/lib/view/open1519653292388.html)
   + [自动化生成 H5 骨架页面](https://zhuanlan.zhihu.com/p/34702561)
   + [腾讯祭出大招VasSonic，让你的H5页面首屏秒开](https://segmentfault.com/a/1190000010711024)
@@ -90,6 +90,9 @@ sidebar: auto
   + [印记中文 - 挖掘国外前端新领域，为前端开发人员提供优质文档！](https://docschina.org/)
   + [Node.js中文社区](https://cnodejs.org/)
   + [leetcode-算法题库](https://leetcode-cn.com/problemset/all/)
+
+## 产品技术
++ [大厂常用的几种灰度发布方案](https://www.woshipm.com/pd/4381854.html)
 
 ## Python入门与实战
   + [零基础入门学习Python](https://edu.aliyun.com/course/137)

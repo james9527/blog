@@ -19,7 +19,7 @@ $ npx create-nuxt-app <project-name>
 ```
 生成的项目结构如下所示：
 
-![Nuxt.js目录结构](https://user-gold-cdn.xitu.io/2020/5/20/1722fce9711dd035?w=1625&h=775&f=png&s=241073)
+![Nuxt.js目录结构](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/5/20/1722fce9711dd035~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 ## 值得一提的事项「Tips」
 
@@ -41,7 +41,7 @@ export default {
 
 附上生命周期流程图：
 
-![Nuxt生命周期流程图](https://user-gold-cdn.xitu.io/2020/5/20/1722fcded4741e59?w=460&h=945&f=png&s=45763)
+![Nuxt生命周期流程图](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/5/20/1722fcded4741e59~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 ### 路由
 > 这是Nuxt.js最省事的一点，它会依据pages目录结构自动生成 `vue-router` 模块的路由配置。因此，我们只需写对目录结构即可，不用关心路由的配置。
