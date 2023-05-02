@@ -32,6 +32,14 @@ module.exports = {
     nextLinks: true,
     nav: [
       {
+        text: '个人简历',
+        items: [{
+            text: '自我介绍&项目经验',
+            link: '/blog/about/me'
+          }
+        ]
+      },
+      {
         text: '前端基础',
         items: [{
             text: '前端基础JS系列',
