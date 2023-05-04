@@ -11,7 +11,7 @@
 * [终端](./terminal.md) 如何配置强大时尚的终端
 * [Shell命令](./linux-command.md) 使用Shell与系统内核交互的一些命令
 * [Node.js](./nodejs.md) 如何搭建Node.js开发环境
-* [Git](./git.md) 如何使用git来进行团队合作开发
+* [Git基本原理及常用命令](./git.md) 如何使用git来进行团队合作开发
 * [Vim](./vim.md) 如何配置使用Vim
 * [Utils](./utils.md) 实用小工具
 * [VSCode](./vscode.md) 配置契合前端开发的vscode环境以及如何进行断点调试
