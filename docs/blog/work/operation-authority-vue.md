@@ -9,7 +9,7 @@ collapsable: true
 ### 左侧菜单权限控制
 
 ```js
-// store/permission.js
+// src/store/modules/permission.js
 import { routes, permissionRoutes } from '@router'
 import $api from '@api'
 import { Message } from 'element-ui'
@@ -226,6 +226,150 @@ export const permission = {
 export default permission
 
 ```
+
+将无需权限的路由（dashboard页&500/404页）与 权限路由拼接起来，借助`router.addRoutes`实现当前登录用户的路由动态挂载出来~
+```js
+// src/router/index.js
+const dashboardRouteMap = [
+  {
+    path: "",
+    component: Layout,
+    meta: {
+      breadcrumb: [
+        {
+          title: i18n.t("pub.proTitle")
+        }
+      ]
+    },
+    children: [
+      {
+        path: "",
+        redirect: "dashboard"
+      },
+      {
+        path: "dashboard",
+        name: "dashboard",
+        component: (resolve) => require(["@pages/dashboard/index.vue"], resolve)
+      }
+    ]
+  },
+  {
+    path: "/login",
+    name: "login",
+    meta: {
+      breadcrumb: [
+        {
+          title: i18n.t("pub.proTitle")
+        }
+      ]
+    },
+    component: (resolve) => require(["@pages/login/index.vue"], resolve)
+  }
+]
+
+const errorRouteMap = [
+  {
+    path: "/errors",
+    meta: {
+      title: "报错"
+    },
+    component: Layout,
+    children: [
+      {
+        path: "403",
+        name: "error-403",
+        meta: {
+          title: "403 报错页面"
+        },
+        component: (resolve) => require(["@pages/errors/403.vue"], resolve)
+      },
+      {
+        path: "404",
+        name: "error-404",
+        meta: {
+          title: "404 报错页面"
+        },
+        component: (resolve) => require(["@pages/errors/404.vue"], resolve)
+      },
+      {
+        path: "500",
+        name: "error-500",
+        meta: {
+          title: "500 报错页面"
+        },
+        component: (resolve) => require(["@pages/errors/500.vue"], resolve)
+      }
+    ]
+  }
+]
+
+export const permissionRoutes = [];
+const options = {
+  base: "/admin",
+  mode: "history",
+  routes: [...dashboardRouteMap, ...permissionRoutes, ...errorRouteMap]
+};
+const router = new Router(options);
+if (!sessionStorage.getItem("historyDepth")) {
+  sessionStorage.setItem("historyDepth", 1);
+}
+router.beforeEach((to, from, next) => {
+  if (to.path !== "/login" && !store.getters.hasGotRouters) {
+    if (location.href.indexOf("code") > -1) {
+      Api.codeToToken(searchToObj(location.search).code).then((res) => {
+        if (res.code === 200) {
+          const oneid = res.data.oneid;
+          oneid.access_token = oneid.accessToken;
+          storage.set("token", oneid);
+        } else {
+          // code失效
+          reLogin();
+        }
+
+        // 路由监控
+        let replaceName = to.path;
+        if (to.path.indexOf("code") > -1) {
+          replaceName = to.path.substring(0, to.path.indexOf("code"));
+        }
+        store
+          .dispatch("GenerateRoutes", router)
+          .then(() => {
+            // 动态加载后台配置菜单对应的路由
+            router.addRoutes(store.getters.addRouters);
+          })
+          .then(() => {
+            next({
+              path: replaceName,
+              replace: true
+            });
+          });
+      });
+      return;
+    }
+    store
+      .dispatch("GenerateRoutes", router)
+      .then(() => {
+        // 动态加载后台配置菜单对应的路由
+        router.addRoutes(store.getters.addRouters);
+      })
+      .then(() => {
+        next({
+          ...to,
+          replace: true
+        });
+      });
+  } else {
+    next();
+  }
+});
+
+router.afterEach((to, from, next) => {
+  NProgress.done();
+});
+
+export default router;
+```
+
 
 ### 页面按钮权限控制
 用v-has指令去判断其值与接口admin-api/menu/tree 返回的code是否一致，控制按钮的显示/隐藏
