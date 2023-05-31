@@ -5,8 +5,8 @@
 `React.memo()` 和 `PureComponent` 都可以用于优化组件性能，它们可以避免不必要的重新渲染，提高组件的渲染效率。React.memo() 是一个高阶组件，用于对函数式组件进行浅比较，如果组件的 props 没有改变，则不会重新渲染组件。PureComponent 是一个继承自 React.Component 的类组件，它会自动对组件的 props 和 state 进行浅比较，如果没有改变，则不会重新渲染组件。
 2. 使用 shouldComponentUpdate() 或 shouldUpdateComponent() 避免不必要的重新渲染。
 `shouldComponentUpdate() `是 React.Component 的一个生命周期函数，用于控制组件是否需要重新渲染。在 shouldComponentUpdate() 中可以通过比较前后 props 和 state 的值，来决定是否需要重新渲染组件。在函数式组件中，可以使用 React.memo() 的第二个参数来实现 shouldComponentUpdate() 的功能。
-3. 使用 React.lazy() 和 Suspense 实现代码分割和懒加载。
-`React.lazy()` 是一个用于实现代码分割和懒加载的 API，它可以将组件的加载延迟到需要使用时再进行加载。使用 React.lazy() 可以减少页面的初始加载时间和资源消耗。Suspense 是一个用于优化异步加载体验的 API，它可以在异步加载完成前显示一个 loading 界面，提高用户体验。
+3. 使用 `React.lazy()` 和 `Suspense` 实现代码分割和懒加载。
+React.lazy() 是一个用于实现代码分割和懒加载的 API，它可以将组件的加载延迟到需要使用时再进行加载。使用 React.lazy() 可以减少页面的初始加载时间和资源消耗。Suspense 是一个用于优化异步加载体验的 API，它可以在异步加载完成前显示一个 loading 界面，提高用户体验。
 4. 使用 memoization 缓存计算结果。
 memoization 是一种缓存计算结果的技术，可以避免重复计算和提高计算效率。在 React 项目中，可以使用 `useMemo()` 和 `useCallback()` 来实现 memoization。useMemo() 可以缓存计算结果，并在依赖项发生变化时重新计算。useCallback() 可以缓存函数，并在依赖项发生变化时重新创建函数。
 5. 使用Immutable.js实现数据不可变
